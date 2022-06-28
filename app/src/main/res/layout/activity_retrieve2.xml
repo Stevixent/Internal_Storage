@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="22dp"
+    tools:context=".RetrieveActivity2">
+
+    <TextView android:id="@+id/nameID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:padding="1sp"
+        android:layout_marginTop="12dp"
+        android:textSize="22sp"
+        />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/nameID"
+        />
+
+    <TextView
+        android:id="@+id/PasswordID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="@string/password"
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/passwordEditTextID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@id/PasswordID"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/saveBtnID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditTextID"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#45C14A"
+        android:onClick="Retrieve"
+        android:text="@string/retrieve" />
+
+    <Button
+        android:id="@+id/nextBtnID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditTextID"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/saveBtnID"
+        android:backgroundTint="#45C14A"
+        android:onClick="Back"
+        android:text="@string/back" />
+
+</RelativeLayout>
